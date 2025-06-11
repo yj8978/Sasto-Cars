@@ -1,0 +1,144 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.container a h1{
+  text-decoration: none;
+  color: red;
+}
+.container a h1:hover{
+  text-decoration: none;
+  color: rgb(209, 244, 15);
+}
+/* Header */
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header .logo {
+  float: left;
+  font-size: 1.8rem;
+}
+
+header nav ul {
+  float: right;
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Hero Section */
+.hero {
+  /* background: url('bg.jpeg') center/cover no-repeat; */
+  color: #fff;
+  text-align: center;
+  padding: 180px 20px;
+}
+
+.hero h2 {
+   color: #222;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+   color: #222;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #e8491d;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn.small {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+}
+
+/* Featured Cars */
+.featured {
+  padding: 50px 0;
+  background: #fff;
+}
+
+.featured h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cars {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.car-card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+}
+
+.car-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}

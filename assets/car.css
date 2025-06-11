@@ -1,0 +1,14 @@
+.carhero{
+    padding: 40px 20px;
+    display: flex;
+    gap: 20px;
+}
+.colCar{
+    width: 50%;
+    height: auto;
+}
+.colCar img{
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
