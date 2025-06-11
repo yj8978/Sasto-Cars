@@ -20,8 +20,8 @@
       <a href="index.php"><h1 class="logo">AutoMart</h1></a>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Cars</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="allcars.php">Cars</a></li>
           <li><a href="#">Sell Your Car</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -35,19 +35,27 @@
         $car = $result->fetch_assoc();
      ?>
     <div class="carhero container">
-        <div class="colCar">
+        <div class="colCar c1">
             <img src="./<?php echo"{$car['image']}";?>" alt="">
         </div>
-        <div class="colCar">
+        <div class="colCar c2">
             <h2><?php echo"{$car['name']}";?></h2>
+            <p>
+            Tesla is an American electric vehicle (EV) manufacturer known for innovation, sustainable energy, and high-performance electric cars. 
+            Tesla leads the industry in clean transportation technology and self-driving software.
+         </p>
+         <div class="populate">
+            <span class="btn small">Year : <?php echo"{$car['year']}"?></span>
+            <span class="btn small">Stock : <?php echo"{$car['stock']}"?></span>
+         </div>
+         <strong>Price : <?php echo"{$car['price']}"?></strong>
+        <a href="car.php?id=<?php echo $row['id']; ?>" class="small btn">Buy Now</a>
         </div>
     </div>
     <?php
     }
     ?>
-   
   </section>
-           
            <?php
             $conn->close();
            ?>

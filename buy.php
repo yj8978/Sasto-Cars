@@ -54,7 +54,7 @@
                   <div class="d1"><span><?php echo"{$row['mileage']}"; ?>miles</span></div>
                 </div>     
                 <a href="car.php?id=<?php echo $row['id']; ?>" class="small btn">View Details</a>
-                <a href="buy.php?id=<?php echo $row['id']; ?>" class="small btn">Buy Now</a>
+                <a href="car.php?id=<?php echo $row['id']; ?>" class="small btn">Buy Now</a>
                 </div>
                 <?php
               }

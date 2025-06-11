@@ -12,3 +12,14 @@
   height: auto;
   border-radius: 5px;
 }
+.c2{
+    display: inherit;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 20px;
+}
+
+.populate{
+    display: flex;
+    gap: 20px;
+}

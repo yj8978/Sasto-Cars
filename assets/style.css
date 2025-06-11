@@ -85,6 +85,7 @@ header::after {
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
+  width: fit-content;
 }
 
 .btn.small {
