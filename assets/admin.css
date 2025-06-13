@@ -1,0 +1,38 @@
+.dashboard{
+    padding: 40px 20px;
+    background-color: #fafafa;
+}
+/* Table styles */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #f2f2f2;
+    color: #555;
+}
+
+.data-table td {
+    background-color: white;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+ul li button{
+    border: none;
+    background-color: transparent;
+}
+button:hover{
+    color: #e8491d;
+}

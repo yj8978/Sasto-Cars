@@ -10,24 +10,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AutoMart - Buy & Sell Cars</title>
+  <title>Sasto Cars</title>
   <link rel="stylesheet" href="./assets/style.css"/>
   <link rel="stylesheet" href="./assets/car.css"/>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <a href="index.php"><h1 class="logo">AutoMart</h1></a>
-      <nav>
-        <ul>
-          <li><a href="index.php">Home</a></li>
-          <li><a href="allcars.php">Cars</a></li>
-          <li><a href="#">Sell Your Car</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+ <?php include 'header.php';?>
   <section class="car-details">
     <?php
     if($result->num_rows>0)
@@ -49,7 +37,16 @@
             <span class="btn small">Stock : <?php echo"{$car['stock']}"?></span>
          </div>
          <strong>Price : <?php echo"{$car['price']}"?></strong>
-        <a href="car.php?id=<?php echo $row['id']; ?>" class="small btn">Buy Now</a>
+        <?php
+                if ($car['stock']>0){
+                  ?>
+                  <a href="buy.php?id=<?php echo $car['id']; ?>" class="small btn">Buy Now</a>
+                  <?php
+                }
+                 else{
+                  echo '<span class="btn small">Out of Stock</span>';
+                }
+                ?>
         </div>
     </div>
     <?php
@@ -59,10 +56,6 @@
            <?php
             $conn->close();
            ?>
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 YYYY. All rights reserved.</p>
-    </div>
-  </footer>
+  <?php include 'footer.php';?>
 </body>
 </html>

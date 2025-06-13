@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <h2>Login</h2>
   <form method="post">
     <label>Username:</label><br>
-    <input type="text" name="username" required><br><br>
+    <input type="text" name="username" placeholder="" required><br><br>
     <label>Password:</label><br>
     <input type="password" name="password" required><br><br>
     <input type="submit" value="Login">

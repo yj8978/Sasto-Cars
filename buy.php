@@ -7,24 +7,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AutoMart - Buy & Sell Cars</title>
+  <title>Sasto Cars</title>
   <link rel="stylesheet" href="./assets/style.css"/>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <a href="index.php"><h1 class="logo">AutoMart</h1></a>
-      <nav>
-        <ul>
-          <li><a href="index.php">Home</a></li>
-          <li><a href="allcars.php">Cars</a></li>
-          <li><a href="#">Sell Your Car</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <h1>Hello!<?php echo'';?></h1>
-    </div>
-  </header>
+<?php include 'header.php';?>
   <section class="hero">
     <div class="container">
       <h2>Find Your Dream Car Today</h2>
@@ -83,7 +70,7 @@
                   <div class="d1"><span>$<?php echo"{$row['price']}"; ?></span></div>
                   <div class="d1"><span><?php echo"{$row['mileage']}"; ?>miles</span></div>
                 </div>     
-                <a href="car.php?id='<?php $row['id'];?>'" class="small btn">View Details</a>
+                <a href="car.php?id='<?php echo $row['id'];?>'" class="small btn">View Details</a>
                 </div>
                 <?php
               }
@@ -93,10 +80,6 @@
       </div>
     </div>
   </section>
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 YYYY. All rights reserved.</p>
-    </div>
-  </footer>
+<?php include 'footer.php';?>
 </body>
 </html>
