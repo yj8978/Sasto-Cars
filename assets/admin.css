@@ -1,6 +1,30 @@
 .dashboard{
-    padding: 40px 20px;
     background-color: #fafafa;
+    display: flex;
+}
+.dc{
+    padding: 80px 20px;
+}
+.main-content{
+    width: 100%;
+}
+.sidebar
+{
+    padding: 20px;
+    width: 200px;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sidebar div{
+    padding: 5px;
+    border: 1px solid black;
+}
+a
+{
+    color: #e8491d;
+    text-decoration: none;
 }
 /* Table styles */
 .data-table {
@@ -35,4 +59,14 @@ ul li button{
 }
 button:hover{
     color: #e8491d;
+}
+ /* Form CSS */
+
+.field-input{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.edit{
+    display: none;
 }

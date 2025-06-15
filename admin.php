@@ -18,66 +18,22 @@
    include 'adminHeader.php';
     ?>
     <section class="dashboard">
-        <div class="container">
-            <h2>Dashboard</h2>
-            <div>
-                <table class="data-table">
-                    <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>Mileage</th>
-                        <th>Stock</th>
-                        <th>Actions</th>
-                    </tr>
-                            <?php
-                                if($result->num_rows > 0){
-                                        while($row = $result->fetch_assoc())
-                                        {
-                                            echo '<tr>';
-                                            echo '<td>';
-                                            echo htmlspecialchars($row['id']);
-                                            echo '</td>';
-                                            echo '<td>';
-                                            echo htmlspecialchars($row['name']);
-                                            echo '</td>';
-                                            echo '<td>';
-                                            echo htmlspecialchars($row['price']);
-                                            echo '</td>';
-                                            echo '<td>';
-                                            echo htmlspecialchars($row['mileage']);
-                                            echo '</td>';
-                                            echo '<td>';
-                                            echo htmlspecialchars($row['stock']);
-                                            echo '</td>';
-                                            echo '<td>';
-                                            ?>
-                                            <ul>
-                                                <li>
-                                                    <button>
-                                                       Edit 
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <button>
-                                                       Delete 
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                            <?php
-                                            echo '</td>';
-                                            echo '</tr>';
-                                        }
-                                }
-                            ?>
-                
-                </table>
-            </div>
+        <div class="sidebar">
+          <div><a href="#" data-page="iDash.php">Manage Cars</a></div>
+          <div><a href="#" data-page="addCars.php">Add Cars</a></div>
+          <div><a href="#" data-page="manageUsers.php">Manage Users</a></div>
         </div>
+        <div class="main-content" id="main-content">
+          <h2>Hello! Admin</h2>
+        </div>      
    </section>
    <?php
    $conn->close(); 
    include 'footer.php';
     ?>
+
+ 
+
+    <script src="./assets/js/adminScript.js"></script>
 </body>
 </html>

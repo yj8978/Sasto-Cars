@@ -4,7 +4,7 @@
       <nav>
         <ul>
           <li><a href="admin.php">Home</a></li>
-          <li><a href="#">Manage Users</a></li>
+          <li><a href="manageUsers.php">Manage Users</a></li>
         </ul>
       </nav>
     </div>
